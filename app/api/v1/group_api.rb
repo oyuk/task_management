@@ -80,13 +80,6 @@ module GroupApi
             status 201
           end
 
-          desc "taskを削除"
-          #DELETE /api/v1/group/:group_id/task/:id
-          delete ':id' do
-
-
-          end
-
         end
       end
 

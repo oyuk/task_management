@@ -59,6 +59,25 @@ gem 'grape-rabl'
 gem 'grape'
 gem 'grape-jbuilder'
 
+
+#Twitter bootstrap
+# less(CSS)対応（後述LESSを使う場合）
+gem 'less-rails'
+# JavaScript のエンジンである v8 を Ruby から使えるようにする
+gem 'therubyracer'
+# JavaScriptコードを実行するためのエンジン
+gem 'execjs'
+
+# Twitter社が提供しているCSSとJavaScriptのフレームワーク
+gem 'twitter-bootstrap-rails'
+
+gem 'less-rails' # Railsでlessを使えるようにする。Bootstrapがlessで書かれているため
+
+group :development do
+  gem 'rails_admin'
+
+end
+
 group :test do
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
@@ -70,6 +89,7 @@ group :test do
   gem 'pry-doc'    # methodを表示
   gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
   gem 'pry-stack_explorer' # スタックをたどれる
+
 
 end
 

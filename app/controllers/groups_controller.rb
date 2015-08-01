@@ -1,11 +1,14 @@
-class GroupsController < ApplicationController
+class GroupsController < Base
 
   def index
-    @groups = Group.all
-    respond_to do |format|
-      format.html
-      format.json
-    end
+  end
+
+  def show
+    @group = Group.find(params[:id])
+  end
+
+  def new
+
   end
 
 end

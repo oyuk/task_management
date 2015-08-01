@@ -63,6 +63,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     columnize (0.9.0)
+    commonjs (0.2.7)
     database_cleaner (1.4.1)
     date_validator (0.8.1)
       activemodel
@@ -80,6 +81,8 @@ GEM
     factory_girl_rails (4.5.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
+    font-awesome-rails (4.4.0.0)
+      railties (>= 3.2, < 5.0)
     foreigner (1.7.4)
       activerecord (>= 3.0.0)
     globalid (0.3.5)
@@ -105,6 +108,8 @@ GEM
       i18n
       rabl
       tilt
+    haml (4.0.6)
+      tilt
     hashie (3.4.2)
     i18n (0.7.0)
     ice_nine (0.11.1)
@@ -121,6 +126,13 @@ GEM
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
+    less-rails (2.7.0)
+      actionpack (>= 4.0)
+      less (~> 2.6.0)
+      sprockets (> 2, < 4)
+      tilt
     libv8 (3.16.14.11)
     loofah (2.0.2)
       nokogiri (>= 1.5.9)
@@ -132,6 +144,7 @@ GEM
     minitest (5.7.0)
     multi_json (1.11.2)
     multi_xml (0.5.5)
+    nested_form (0.3.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     pry (0.10.1)
@@ -158,6 +171,9 @@ GEM
       rack (>= 0.4)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
+    rack-pjax (0.8.0)
+      nokogiri (~> 1.5)
+      rack (~> 1.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.3)
@@ -182,6 +198,20 @@ GEM
     rails-i18n (4.0.4)
       i18n (~> 0.6)
       railties (~> 4.0)
+    rails_admin (0.6.8)
+      builder (~> 3.1)
+      coffee-rails (~> 4.0)
+      font-awesome-rails (>= 3.0, < 5)
+      haml (~> 4.0)
+      jquery-rails (>= 3.0, < 5)
+      jquery-ui-rails (~> 5.0)
+      kaminari (~> 0.14)
+      nested_form (~> 0.3)
+      rack-pjax (~> 0.7)
+      rails (~> 4.0)
+      remotipart (~> 1.0)
+      safe_yaml (~> 1.0)
+      sass-rails (>= 4.0, < 6)
     railties (4.2.3)
       actionpack (= 4.2.3)
       activesupport (= 4.2.3)
@@ -190,6 +220,7 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
     ref (2.0.0)
+    remotipart (1.2.1)
     rspec-core (3.3.2)
       rspec-support (~> 3.3.0)
     rspec-expectations (3.3.1)
@@ -207,6 +238,7 @@ GEM
       rspec-mocks (~> 3.3.0)
       rspec-support (~> 3.3.0)
     rspec-support (3.3.0)
+    safe_yaml (1.0.4)
     sass (3.4.16)
     sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -239,6 +271,11 @@ GEM
       tilt (>= 1.3.0, < 3)
     turbolinks (2.5.3)
       coffee-rails
+    twitter-bootstrap-rails (3.2.0)
+      actionpack (~> 4.1)
+      execjs (~> 2.2)
+      rails (~> 4.1)
+      railties (~> 4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
@@ -268,6 +305,7 @@ DEPENDENCIES
   database_cleaner
   date_validator
   email_validator
+  execjs
   factory_girl_rails
   foreigner
   grape
@@ -277,6 +315,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   kaminari
+  less-rails
   nokogiri
   pry-byebug
   pry-doc
@@ -285,6 +324,7 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.2.3)
   rails-i18n
+  rails_admin
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
@@ -293,6 +333,7 @@ DEPENDENCIES
   sqlite3
   therubyracer
   turbolinks
+  twitter-bootstrap-rails
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
 
